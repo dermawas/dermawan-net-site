@@ -150,6 +150,12 @@
       border-color: #c9a84c;
     }
 
+    .portfolio-name {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: #1e2d4a;
+    }
+
     .portfolio-desc {
       display: block;
       font-size: 12px;
@@ -166,6 +172,15 @@
     }
 
     .portfolio-sublist .portfolio-link {
+      font-size: 12.5px;
+    }
+
+    /* Only bites from the second entry on, so nothing single-item moves. */
+    .portfolio-sublist li + li {
+      margin-top: 0.6rem;
+    }
+
+    .portfolio-sublist .portfolio-name {
       font-size: 12.5px;
     }
 
@@ -325,6 +340,10 @@
           <li>
             <a href="https://forstradigital.com/ledgerize.html" class="portfolio-link" target="_blank" rel="noopener noreferrer">&#8618; Ledgerize</a>
             <span class="portfolio-desc">Expense-tracking app with GnuCash sync, built and shipped under Forstra Digital.</span>
+          </li>
+          <li>
+            <span class="portfolio-name">&#8618; ForstrAI</span>
+            <span class="portfolio-desc">Telegram chatbot that answers from a client's own documents, and says so when they do not cover the question.</span>
           </li>
         </ul>
       </li>
