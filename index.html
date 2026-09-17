@@ -250,9 +250,10 @@
           "photo tagline"
           "photo name"
           "photo location"
-          "ventureslabel divider1"
-          "ventures bio"
-          "ventures askline"
+          ".             divider1"
+          "ventureslabel bio"
+          "ventures      bio"
+          "ventures      askline"
           "divider2 divider2"
           "linkedin linkedin";
         max-width: 860px;
@@ -267,7 +268,8 @@
       .bio { grid-area: bio; }
       .ask-line { grid-area: askline; margin-bottom: 1.5rem; }
       .divider:nth-of-type(2) { grid-area: divider2; }
-      .section-label { grid-area: ventureslabel; margin-top: 1.25rem; }
+      /* Sits in the bio's first row; the nudge lines its small caps up with the bio's first line. */
+      .section-label { grid-area: ventureslabel; margin-top: 0.3rem; }
       .portfolio-list { grid-area: ventures; margin-bottom: 0; }
 
       .card-footer { display: contents; }
